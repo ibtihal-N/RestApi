@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BookDetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViwBookDetails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/TextViewtitleDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViwBookDetails"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextViewAuthorsDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewtitleDetails"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextViewDescriptionDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewAuthorsDetails"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewDescriptionDetails"
+        android:text="@string/share"/>
+</RelativeLayout>
